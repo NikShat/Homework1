@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[22]:
+
 
 
 from bs4 import BeautifulSoup
@@ -12,7 +12,7 @@ import argparse
 import os
 
 
-# In[ ]:
+
 
 
 # аргументы для командной строки
@@ -30,7 +30,7 @@ a = soup
 b = a.text
 
 
-# In[6]:
+
 
 
 # регулярное выражения для сбора ФИО жертв
@@ -54,7 +54,6 @@ else:
 Organisation = pd.Series(w)
 
 
-# In[9]:
 
 
 # шаблон для поиска ФИО палача
@@ -98,7 +97,6 @@ else:
     shot_date = pd.Series(shot*len(data_names))
 
 
-# In[20]:
 
 
 # вся собранная информация объединена в датафрейм
@@ -106,7 +104,7 @@ df = pd.DataFrame({'ФИО': data_names, 'Дата расстрела': shot_dat
 df
 
 
-# In[19]:
+
 
 
 # сохранение данных
